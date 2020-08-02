@@ -1,17 +1,9 @@
 import { Fragment } from 'react';
-import { gql, useQuery } from '@apollo/client';
+import { useQuery } from '@apollo/client';
+
+import { GET_LAUNCHES_PAST } from '../gql/get_launches_past';
 
 import ErrorMessage from './ErrorMessage';
-
-export const GET_LAUNCHES_PAST = gql`
-  query launchesPast {
-    launchesPast {
-      id
-      mission_name
-      launch_date_local
-    }
-  }
-`;
 
 const LaunchesList = () => {
   const { loading, error, data } = useQuery(GET_LAUNCHES_PAST);
@@ -26,8 +18,7 @@ const LaunchesList = () => {
       {launchesPast.map((launch, index) => (
         <div key={launch.id}>
           <div>
-            <span>{index + 1}</span>
-            <span>{launch.mission_name}</span>
+            <span>{index + 1}</span> - <span>{launch.mission_name}</span>
           </div>
         </div>
       ))}

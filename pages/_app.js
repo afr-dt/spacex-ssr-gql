@@ -1,3 +1,5 @@
+import '../styles/index.css';
+
 import { ApolloProvider } from '@apollo/client';
 import { useApollo } from '../lib/apolloClient';
 
