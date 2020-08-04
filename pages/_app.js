@@ -8,10 +8,10 @@ export default function App({ Component, pageProps }) {
   const apolloClient = useApollo(pageProps.initialApolloState);
 
   return (
-    <ApolloProvider client={apolloClient}>
-      <Layout>
+    <Layout>
+      <ApolloProvider client={apolloClient}>
         <Component {...pageProps} />
-      </Layout>
-    </ApolloProvider>
+      </ApolloProvider>
+    </Layout>
   );
 }

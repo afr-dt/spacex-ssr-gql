@@ -17,25 +17,17 @@ const Layout = ({ children }) => {
           rel="stylesheet"
         />
       </Head>
-      <div className="bg-gray-200 min-h-screen">
+      <div className="bg-gray-400 min-h-screen">
         <Header />
         <div className="container mx-auto">
-          <main className="mt-5">
-            {children}
-            <style jsx global>
-              {`
-                * {
-                  font-family: 'Roboto Mono', monospace;
-                }
-                body {
-                  margin: 0;
-                }
-                a {
-                  color: #22bad9;
-                }
-              `}
-            </style>
-          </main>
+          {children}
+          <style jsx global>
+            {`
+              * {
+                font-family: 'Roboto Mono', monospace;
+              }
+            `}
+          </style>
         </div>
       </div>
     </Fragment>

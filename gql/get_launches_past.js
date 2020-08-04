@@ -8,6 +8,7 @@ export const GET_LAUNCHES_PAST = gql`
       launch_success
       launch_date_local
       launch_date_utc
+      details
       links {
         wikipedia
         flickr_images
@@ -15,7 +16,6 @@ export const GET_LAUNCHES_PAST = gql`
       rocket {
         rocket_name
       }
-      details
     }
   }
 `;
