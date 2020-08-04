@@ -35,14 +35,14 @@ const LaunchesList = () => {
 
   return (
     <>
-      <div className="flex flex-wrap px-1 py-1">
+      <div className="flex flex-wrap mt-1 mx-2">
         {launchesPast.map((launch) => (
           <LaunchItems key={launch.id} launch={launch} />
         ))}
       </div>
       {areMoreLaunches && (
         <button
-          className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded"
+          className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-2 rounded"
           onClick={() => loadMoreLaunchs()}
           disabled={loadingMoreLaunchs}
         >
