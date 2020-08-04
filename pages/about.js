@@ -1,7 +1,10 @@
+import { Fragment } from 'react';
+import Company from '../components/Company';
+
 const AboutPage = () => (
-  <article>
-    <h1>The Idea Behind This Example</h1>
-  </article>
+  <Fragment>
+    <Company />
+  </Fragment>
 );
 
 export default AboutPage;

@@ -6,7 +6,7 @@ const Header = () => {
       <div className="-mb-px flex">
         <Link href="/">
           <a className="no-underline text-teal-dark border-b-2 border-teal-dark uppercase tracking-wide font-bold text-xs py-2 mr-8">
-            Home
+            SpaceX Launches
           </a>
         </Link>
         <Link href="/about">

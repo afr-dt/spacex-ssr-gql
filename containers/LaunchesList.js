@@ -30,9 +30,7 @@ const LaunchesList = () => {
   if (loading && !loadingMoreLaunchs) return <div>Cargando</div>;
   if (!data) return <div>No hay lanzamientos.</div>;
 
-  console.log('🔥', data);
   const { launchesPast } = data;
-
   const areMoreLaunches = launchesPast.length;
 
   return (
@@ -48,7 +46,7 @@ const LaunchesList = () => {
           onClick={() => loadMoreLaunchs()}
           disabled={loadingMoreLaunchs}
         >
-          {loadingMoreLaunchs ? 'Carcango' : 'Mostrar mas'}
+          {loadingMoreLaunchs ? 'Cargango' : 'Mostrar mas'}
         </button>
       )}
     </>

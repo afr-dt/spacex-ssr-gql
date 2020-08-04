@@ -26,6 +26,9 @@ const Layout = ({ children }) => {
               * {
                 font-family: 'Roboto Mono', monospace;
               }
+              a {
+                color: #22bad9;
+              }
             `}
           </style>
         </div>
